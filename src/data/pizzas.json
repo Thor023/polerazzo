@@ -34,5 +34,41 @@
     "name": "Prueba4",
     "price": 7000,
     "amount": 1
+  },
+  {
+    "desc": "Polera prueba 5",
+    "id": "P005",
+    "img": "https://th.bing.com/th/id/R.5ff3cec9f6e7ff6b6bba844fd2e4a64c?rik=086Cz%2f0%2boeyb6w&pid=ImgRaw&r=0",
+    "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
+    "name": "Prueba5",
+    "price": 7000,
+    "amount": 1
+  },
+  {
+    "desc": "Polera prueba 6",
+    "id": "P004",
+    "img": "https://www.magicpony.cl/images/sites_products-62bf9143c5f69.jpg",
+    "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
+    "name": "Prueba6",
+    "price": 7000,
+    "amount": 1
+  },
+  {
+    "desc": "Polera prueba 7",
+    "id": "P004",
+    "img": "https://80steess3.imgix.net/Main-Headless/characters-mega-man-shirt.main.jpeg?w=500&h=750&fit=crop&usm=12&sat=15&auto=format&q=60&nr=15",
+    "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
+    "name": "Prueba7",
+    "price": 7000,
+    "amount": 1
+  },
+  {
+    "desc": "Polera prueba 8",
+    "id": "P008",
+    "img": "https://th.bing.com/th/id/OIP.OwOw81CwtwLnbuus-pY0wQHaLI?pid=ImgDet&rs=1",
+    "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
+    "name": "Prueba8",
+    "price": 7000,
+    "amount": 1
   }
 ]
