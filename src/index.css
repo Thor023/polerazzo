@@ -1,0 +1,419 @@
+/* Estilos Generales para toda la app */
+* {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color:rgb(38, 48, 48);
+}
+
+/* Estilos para el navbar */
+.navbar {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-around;
+}
+
+.navbar_title {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_button {
+  background-color: black;
+  color: white;
+  align-items: center;
+  display: inline-block;
+  border: 1px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.navbar_buttons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_container {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.navbar_logo {
+  margin: 10px;
+}
+
+.navbar_cart {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_cart_logo {
+  margin: 5px;
+}
+
+/* Estilos para el header */
+.header {
+  background-image: url('https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29taWN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 10rem;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.header::before {
+  content: ' ';
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.header div {
+  padding: 3rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+hr {
+  width: 75%;
+  margin: 0 auto;
+  color: #fff9;
+}
+
+/* Estilos para las cards */
+.card_container {
+  width: 13rem;
+  margin: 2rem auto;
+  border: 1px solid #ccd2d766;
+  background-color: black;
+  color: #fff;
+}
+
+.card_img img {
+  max-width: 100%;
+}
+
+.card_title {
+  padding: 5px 10px;
+}
+
+.card_title h1 {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.749);
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.card_title hr {
+  width: 95%;
+  margin-top: 10px;
+}
+
+.ingredients {
+  padding: 10px;
+}
+
+.ingredients ul {
+  list-style-type: none;
+  margin-top: 8px;
+}
+
+.ingredients span {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.ingredients ul li {
+  font-size: 12px;
+  padding: 1px;
+}
+
+.ingredients ul li > span {
+  margin: 0 5px 0 25px;
+}
+
+.ingredients span > img {
+  width: 10px;
+}
+
+.price {
+  text-align: center;
+  padding: 12px;
+}
+
+.add_card {
+display: flex;
+justify-content: center;
+gap: 0.5rem;
+}
+
+.add_card button {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5px;
+border: none;
+padding: 2px 5px;
+font-size: 10px;
+color: #fff;
+background-color: #363425;
+margin-bottom: 5px;
+cursor: pointer;
+border: 1px solid white;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.add_card :nth-child(2) {
+background-color: #001f99;
+}
+
+.card_grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+width: 70%;
+margin: 0 auto;
+gap: 16px;
+}
+
+/* Estilos para el detalle del producto */
+.wrapper {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-auto-flow: row;
+align-items: center;
+margin: 2rem auto;
+width: 80%;
+height: 56vh;
+gap: 1rem;
+border: 1px solid rgb(220, 220, 220);
+background-color: black;
+color: #fff;
+}
+
+.grid__img img {
+max-width: 100%;
+}
+
+.description {
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+}
+
+.description ul {
+list-style-type: none;
+}
+
+.description p {
+font-size: 12px;
+line-height: 1.5;
+}
+
+.description h1 {
+font-weight: bold;
+text-transform: capitalize;
+font-size: 20px;
+}
+
+.description hr {
+width: 95%;
+}
+
+.info_card {
+display: flex;
+justify-content: space-between;
+width: 95%;
+}
+
+.info_card button {
+  background-color: #001f99;
+color: #fff;
+padding: 5px 12px;
+font-weight: bold;
+font-size: 12px;
+border: none;
+display: flex;
+align-items: center;
+gap: 5px;
+cursor: pointer;
+border: 1px solid white;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el componente del carrito */
+.carrito__container {
+width: 80%;
+background-color: black;
+color: #fff;
+height: auto;
+padding: 20px;
+margin: 2rem auto;
+}
+
+.carrito__wrapper {
+background-color: black;
+border: 1px solid #ccd2d766;
+}
+
+.carrito__wrapper hr {
+width: 98%;
+}
+
+.carrito__wrapper article {
+display: flex;
+justify-content: space-between;
+padding: 10px;
+}
+
+.carrito__container h1 {
+text-transform: capitalize;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.carrito__description {
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.carrito__description h2 {
+font-size: 14px;
+font-weight: bold;
+}
+
+.carrito__info__pay {
+display: flex;
+justify-content: center;
+align-items:center;
+gap: 5px;
+}
+
+.carrito__info__pay h2 {
+color: rgb(67, 159, 143);
+}
+
+.carrito__info__pay span {
+font-weight: bolder;
+font-size: 14px;
+}
+
+.carrito__info__pay button {
+padding: 5px 8px;
+border: none;
+color: #fff;
+border-radius: 3px;
+cursor: pointer;
+}
+
+#button__ {
+background-color: #be0d0d;
+}
+
+#button_sum {
+background-color: #009929;
+}
+
+#payment {
+background-color: rgb(25, 135, 84);
+border: none;
+color: #fff;
+padding: 5px 10px;
+font-size: 12px;
+border-radius: 3px;
+cursor: pointer;
+}
+
+.payment_info {
+padding: 15px 10px;
+}
+
+.link {
+text-decoration: none;
+color: #fff;
+}
+
+.footer {
+border-color: black;
+text-align: center;
+font-weight: bolder;
+color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+background-size: 400%;
+animation: move 5s ease infinite;
+background-image: linear-gradient(
+68.7deg,
+rgb(29, 235, 115) 13.2%,
+rgba(137, 149, 250, 1) 29.8%,
+rgb(43, 6, 37) 48.9%,
+rgb(145, 45, 76) 68.2%,
+rgba(255, 94, 0, 1) 86.4%
+);
+margin-top: auto;
+}
+
+@-webkit-keyframes gradient {
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+
+@keyframes gradient {
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+
+@keyframes move {
+0%,
+100% {
+background-position: 200% 0%;
+}
+
+50% {
+background-position: 0% 200%;
+}
+}
+
+
+
+
+
