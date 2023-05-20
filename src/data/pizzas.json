@@ -7,7 +7,7 @@
     "name": "Prueba1",
     "price": 9000,
     "amount": 1
-  },  
+  },
   {
     "desc": "Polera prueba 2",
     "id": "P002",
@@ -69,6 +69,15 @@
     "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
     "name": "Prueba8",
     "price": 7000,
+    "amount": 1
+  },
+  {
+    "desc": "Polera prueba 9",
+    "id": "P008",
+    "img": "https://th.bing.com/th/id/OIP.OwOw81CwtwLnbuus-pY0wQHaLI?pid=ImgDet&rs=1",
+    "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
+    "name": "Prueba9",
+    "price": 9000,
     "amount": 1
   }
 ]
