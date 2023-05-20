@@ -17,7 +17,7 @@ const CardView = ({ pizzas }) => {
             <h1>{pizza.name}</h1>
             <hr />
             <div className="ingredients">
-              <span>Ingredientes:</span>
+              <span>Colores disponibles</span>
               <ul>
                 {pizza.ingredients.map((ingredient, idx) => (
                   <li key={idx}>
