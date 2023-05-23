@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 //Importar funciones desde consultas
-const { agregarPost, leerPost, modificarPost, borrarPost } = require('./consultas')
+const { agregarUsuario, informacionUsuario, borrarUsuario } = require('./consultas')
 
 //Uso de cors y otros MW
 const cors = require('cors')
@@ -15,18 +15,20 @@ app.listen(3000, () => {
     console.log('Servidor funciona en el puerto 3000')
 })
 
-app.get('/posts', async (req, res) => {
-    const resultado = await leerPost()
+app.get('/users', async (req, res) => {
+    const resultado = await informacionUsuario()
     res.json(resultado)
 })
 
 
-app.post('/posts', async (req, res) => {
-    const { titulo, url, descripcion } = req.body
-    await agregarPost(titulo, url, descripcion)
+app.post('/users', async (req, res) => {
+    const { user_name, password, mail, phone, created_at, modified_at } = req.body
+    await agregarUsuario(user_name, password, mail, phone, created_at, modified_at)
     res.json()
 })
 
+/*
+--> Este es para modificar, falta ahí. Es la plantilla de un desafío anterior
 
 app.put('/posts/like/:id', async (req, res) => {
     const { id } = req.params
@@ -34,8 +36,10 @@ app.put('/posts/like/:id', async (req, res) => {
     res.send('Post modificado en la base de datos')
 })
 
-app.delete('/posts/:id', async (req, res) => {
+*/
+
+app.delete('/users/:id', async (req, res) => {
     const { id } = req.params
     await borrarPost(id)
-    res.send('Post eliminado en la base de datos')
+    res.send('Usuario eliminado en la base de datos')
 })
