@@ -51,6 +51,28 @@ export default function RegistroForm() {
           placeholder="Password"
         />
       </div>
+      <div className="form-group mt-1 ">
+        <label>email</label>
+        <input
+          value={usuario.email}
+          onChange={handleSetUsuario}
+          type="email"
+          name="mail"
+          className="form-control"
+          placeholder="mail"
+        />
+      </div>
+      <div className="form-group mt-1 ">
+        <label>phone</label>
+        <input
+          value={usuario.phone}
+          onChange={handleSetUsuario}
+          type="tel"
+          name="phone"
+          className="form-control"
+          placeholder="phone"
+        />
+      </div>
 
       <button onClick={registrarUsuario} className="btn btn-light mt-3">
         Registrarme

@@ -1,4 +1,6 @@
 import React from 'react'
+import { useState } from "react"
+import Context from '../context/Context'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Carrito from '../pages/Carrito'
@@ -9,8 +11,12 @@ import Details from '../pages/Details'
 import Home from '../pages/Home'
 
 const AppRoutes = () => {
+  const [usuario, setUsuario] = useState(null)
+
   return (
     <>
+          <Context.Provider value={{ usuario, setUsuario }} >
+
     <Router>
       <Navbar/>
         <Routes>
@@ -22,6 +28,7 @@ const AppRoutes = () => {
             <Route path='/registro' element={<Registro/>} />
         </Routes>
     </Router>
+    </Context.Provider>
     </>
   )
 }
