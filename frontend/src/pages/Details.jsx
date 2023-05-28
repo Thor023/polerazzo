@@ -2,9 +2,9 @@ import React, { useContext } from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import icon from '../assets/images/pizza.png'
+// import icon from '../assets/images/pizza.png'
 import { CartContext } from '../context/CartContext'
-import data from '../data/pizzas.json'
+import data from '../data/poleras.json'
 
 const Details = () => {
   const [pizza, setPizza] = useState('')
