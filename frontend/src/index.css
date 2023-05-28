@@ -12,51 +12,66 @@ body {
 }
 
 /* Estilos para el navbar */
+
+
 .navbar {
   display: flex;
-  background-color: black;
-  color: white;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #121212;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.navbar_container {
+  display: flex;
+  align-items: center;
+  height: 50px; /* Ajusta la altura del Navbar según tus necesidades */
+  padding: 0 20px; /* Ajusta el espacio entre el logo y el título según tus necesidades */
+}
+.navbar_logo {
+  flex: 0;
 }
 
 .navbar_title {
-  display: flex;
-  align-items: center;
+  margin-left: 10px; /* Ajusta el espacio entre el logo y el título según tus necesidades */
 }
 
-.navbar_button {
-  background-color: black;
-  color: white;
+.navbar_cart {
+  display: flex;
   align-items: center;
-  display: inline-block;
-  border: 1px solid white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 8px 16px;
-  cursor: pointer;
+  margin-right: 10px;
+}
+
+.navbar_cart_logo {
+  margin-right: 5px;
 }
 
 .navbar_buttons {
   display: flex;
   align-items: center;
 }
-
-.navbar_container {
-  display: flex;
-  align-items: center;
-  margin-top: 8px;
+.navbar_button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-.navbar_logo {
-  margin: 10px;
+.link {
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.navbar_cart {
-  display: flex;
-  align-items: center;
+.link:hover {
+  text-decoration: underline;
 }
-
-.navbar_cart_logo {
-  margin: 5px;
+.logo_image {
+  height: 120px; /* Ajusta la altura del logo según tus necesidades */
+  width: auto;
 }
 
 /* Estilos para el header */
@@ -412,8 +427,87 @@ background-position: 200% 0%;
 background-position: 0% 200%;
 }
 }
+/* Estilos para el Login */
 
+.col-10 {
+  width: 80%;
+}
 
+.col-sm-6 {
+  width: 50%;
+}
 
+.col-md-3 {
+  width: 25%;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+hr {
+  border-color: #ffffff;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+label {
+  color: #ffffff;
+}
+
+.form-control {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.logo-container-inicio {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.logo-incio {
+  width: 250px; /* Ajusta el ancho del logo según sea necesario */
+  height: auto;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logo-image {
+  width: 300px;
+  height: auto;
+}
 
 
