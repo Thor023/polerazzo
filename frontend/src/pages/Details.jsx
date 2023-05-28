@@ -1,13 +1,12 @@
 import React, { useContext } from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import icon from "../assets/images/pizza.png";
+import icon from "../assets/images/polerazzo_logo.png";
 import { CartContext } from "../context/CartContext";
-import data from "../data/pizzas.json";
+import data from "../data/poleras.json";
 
 const Details = () => {
-  const [pizza, setPizza] = useState("");
+  const [polera, setPolera] = useState("");
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
   const navigate = useNavigate();
@@ -16,11 +15,11 @@ const Details = () => {
   const [selectedSize, setSelectedSize] = useState("");
 
   useEffect(() => {
-    detailsPizza();
+    detailsPolera();
   }, []);
 
-  const detailsPizza = () => {
-    setPizza(data.find((item) => item.id === id));
+  const detailsPolera = () => {
+    setPolera(data.find((item) => item.id === id));
     setLoading(false);
   };
 
@@ -52,7 +51,7 @@ const Details = () => {
     <>
       <article className="wrapper">
         <div className="grid__img">
-          <img src={pizza.img} alt="" />
+          <img src={polera.img} alt="" />
         </div>
         <div className="description">
           <div
@@ -64,7 +63,7 @@ const Details = () => {
               cursor: "pointer",
             }}
           >
-            <h1>{pizza.name}</h1>
+            <h1>{polera.name}</h1>
             <span>
               <svg
                 onClick={() => navigate(-1)}
@@ -79,22 +78,20 @@ const Details = () => {
             </span>
           </div>
           <hr />
-          <p>{pizza.desc}</p>
+          <p>{polera.desc}</p>
 
           <div className="ingredients" style={{ padding: "0" }}>
             <span>Colores</span>
-            <select
-              value={selectedColor}
-              onChange={handleColorChange}
-              className="color_select"
-            >
-              <option value="">Color</option>
-              {pizza.ingredients.map((item, idx) => (
-                <option key={idx} value={item}>
+            <ul>
+              {polera.colors.map((item, idx) => (
+                <li key={idx}>
+                  <span>
+                    <img src={icon} alt="" />
+                  </span>
                   {item}
-                </option>
+                </li>
               ))}
-            </select>
+            </ul>
           </div>
           <hr />
           <div className="tallas" style={{ padding: "0" }}>
@@ -105,7 +102,7 @@ const Details = () => {
               className="size_select"
             >
               <option value="">Talla</option>
-              {pizza.tallas.map((size, idx) => (
+              {polera.tallas.map((size, idx) => (
                 <option key={idx} value={size}>
                   {size}
                 </option>
@@ -113,10 +110,16 @@ const Details = () => {
             </select>
           </div>
           <div className="info_card">
-            <h1>Precio: ${pizza.price}</h1>
+            <h1>Precio: ${polera.price}</h1>
             <button
               type="button"
-              onClick={() => addToCart({ ...pizza, color: selectedColor, size: selectedSize })}
+              onClick={() =>
+                addToCart({
+                  ...polera,
+                  color: selectedColor,
+                  size: selectedSize,
+                })
+              }
             >
               Añadir
               <span>&#x1F6D2;</span>

@@ -1,12 +1,12 @@
 import React from 'react'
 import CardView from './CardView'
-import pizzas from '../data/pizzas.json'
+import poleras from '../data/poleras.json'
 // import { getData } from '../helpers/getData'
 
 const Card = () => {
   return (
     <div className='card_grid'>
-        <CardView pizzas={pizzas}/>
+        <CardView poleras={poleras}/>
     </div>
   )
 }

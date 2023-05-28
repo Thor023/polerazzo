@@ -21,7 +21,7 @@ const AppRoutes = () => {
       <Navbar/>
         <Routes>
             <Route path='/' element={<Home/>} />
-            <Route path='/pizza/:id' element={<Details/>} />
+            <Route path='/polera/:id' element={<Details/>} />
             <Route path='/carrito' element={<Carrito/>} />
             <Route path='/login' element={<Login/>} />
             <Route path='/perfil' element={<Perfil/>} />
