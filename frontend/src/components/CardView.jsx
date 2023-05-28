@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import icon from "../assets/images/pizza.png";
 import { Link } from 'react-router-dom'
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
 const CardView = ({ pizzas }) => {
-  const { addToCart } = useContext(CartContext)
+  const { addToCart } = useContext(CartContext);
+  const [selectedColor, setSelectedColor] = useState("");
+
+  const handleColorChange = (event) => {
+    setSelectedColor(event.target.value);
+  };
+
   return (
     <>
       {pizzas.map((pizza) => (
@@ -17,29 +23,49 @@ const CardView = ({ pizzas }) => {
             <h1>{pizza.name}</h1>
             <hr />
             <div className="ingredients">
-              <span>Colores disponibles</span>
-              <ul>
+              <label htmlFor={`color-select-${pizza.id}`}>Colores disponibles</label>
+              <select
+                id={`color-select-${pizza.id}`}
+                value={selectedColor}
+                onChange={handleColorChange}
+                className="color_select"
+              >
+                <option value="">Selecciona un color</option>
                 {pizza.ingredients.map((ingredient, idx) => (
-                  <li key={idx}>
-                    <span>
-                      <img src={icon} alt="" />
-                    </span>
+                  <option key={idx} value={ingredient}>
                     {ingredient}
-                  </li>
+                  </option>
                 ))}
-              </ul>
+              </select>
             </div>
             <hr />
+            <div className="tallas">
+            <label htmlFor={`color-select-${pizza.id}`}>Tallas disponibles</label>
+              <select
+                id={`color-select-${pizza.id}`}
+                value={selectedColor}
+                onChange={handleColorChange}
+                className="color_select"
+              >
+                <option value="">Selecciona una talla</option>
+                {pizza.tallas.map((ingredient, idx) => (
+                  <option key={idx} value={ingredient}>
+                    {ingredient}
+                  </option>
+                ))}
+              </select>
+
+            </div>
             <h1 className="price">${pizza.price}</h1>
 
             <div className="add_card">
-              <Link style={{textDecoration:'none'}} to={`/pizza/${pizza.id}`}>
-              <button>
-                Ver Mas
-                <span>&#128064;</span>
-              </button>
+              <Link style={{ textDecoration: 'none' }} to={`/pizza/${pizza.id}`}>
+                <button>
+                  Ver Mas
+                  <span>&#128064;</span>
+                </button>
               </Link>
-              <button type="buton" onClick={()=>addToCart(pizza)} > 
+              <button type="button" onClick={() => addToCart(pizza)}>
                 Añadir
                 <span>&#x1F6D2;</span>
               </button>
