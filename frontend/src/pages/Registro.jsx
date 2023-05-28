@@ -14,7 +14,7 @@ export default function RegistroForm() {
 
   const registrarUsuario = async () => {
     const urlServer = "http://localhost:3000"
-    const endpoint = "/usuarios"
+    const endpoint = "/users"
     try {
       await axios.post(urlServer + endpoint, usuario)
       alert("Usuario registrado con éxito")
@@ -32,7 +32,7 @@ export default function RegistroForm() {
       <div className="form-group mt-1 ">
         <label>Email address</label>
         <input
-          value={usuario.email}
+          value={usuario.mail}
           onChange={handleSetUsuario}
           type="email"
           name="email"
@@ -54,7 +54,7 @@ export default function RegistroForm() {
       <div className="form-group mt-1 ">
         <label>email</label>
         <input
-          value={usuario.email}
+          value={usuario.mail}
           onChange={handleSetUsuario}
           type="email"
           name="mail"
