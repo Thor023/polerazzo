@@ -1,7 +1,6 @@
-import React from "react"
-import CardView from "./CardView"
-import poleras from "../data/poleras.json"
-// import { getData } from '../helpers/getData'
+import React from 'react'
+import CardView from './CardView'
+import poleras from '../data/poleras.json'
 
 const Card = () => {
   return (

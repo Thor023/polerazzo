@@ -21,7 +21,11 @@ const AppRoutes = () => {
       <Navbar/>
         <Routes>
             <Route path='/' element={<Home/>} />
+<<<<<<< HEAD
             <Route path='/poleras/:id' element={<Details/>} />
+=======
+            <Route path='/polera/:id' element={<Details/>} />
+>>>>>>> release/felipe/hotfixestilos
             <Route path='/carrito' element={<Carrito/>} />
             <Route path='/login' element={<Login/>} />
             <Route path='/perfil' element={<Perfil/>} />
