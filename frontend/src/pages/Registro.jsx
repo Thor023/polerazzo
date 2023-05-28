@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
+import Logo from "../assets/images/polerazzo_logo.png";
+
 
 export default function RegistroForm() {
   const navigate = useNavigate()
@@ -27,7 +29,7 @@ export default function RegistroForm() {
 
   return (
     <div className="col-10 col-sm-6 col-md-3 m-auto mt-5">
-      <h1>Registrar nuevo usuario</h1>
+      <h1>Nuevo usuario</h1>
       <hr />
       <div className="form-group mt-1 ">
         <label>Email address</label>
@@ -52,7 +54,7 @@ export default function RegistroForm() {
         />
       </div>
       <div className="form-group mt-1 ">
-        <label>email</label>
+        <label>Email</label>
         <input
           value={usuario.mail}
           onChange={handleSetUsuario}
@@ -63,7 +65,7 @@ export default function RegistroForm() {
         />
       </div>
       <div className="form-group mt-1 ">
-        <label>phone</label>
+        <label>Phone</label>
         <input
           value={usuario.phone}
           onChange={handleSetUsuario}
@@ -77,6 +79,9 @@ export default function RegistroForm() {
       <button onClick={registrarUsuario} className="btn btn-light mt-3">
         Registrarme
       </button>
+      <div className="logo-container">
+        <img src={Logo} alt="Polerazzo Logo" className="logo-image" />
+      </div>
     </div>
   )
 }
