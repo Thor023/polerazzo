@@ -15,6 +15,20 @@ app.listen(3000, () => {
     console.log('Servidor funciona en el puerto 3000')
 })
 
+//Función de logueo
+app.post('/login', reportarConsultas, async (req, res) => {
+    try {
+        const { email, password } = req.body
+        await loguear(email, password)
+        const token = jwt.sign({ email }, "az_AZ")
+        res.send(token)
+    }
+    catch (error) {
+        console.log(error)
+        res.status(error.code || 500).send(error)
+    }
+})
+
 app.get('/usuarios', async (req, res) => {
     const resultado = await informacionUsuario()
     res.json(resultado)
