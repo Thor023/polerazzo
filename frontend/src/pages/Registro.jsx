@@ -30,14 +30,14 @@ export default function RegistroForm() {
       <h1>Registrar nuevo usuario</h1>
       <hr />
       <div className="form-group mt-1 ">
-        <label>Email address</label>
+        <label>usuario</label>
         <input
-          value={usuario.email}
+          value={usuario.user_name}
           onChange={handleSetUsuario}
-          type="email"
-          name="email"
+          type="text"
+          name="usuario"
           className="form-control"
-          placeholder="Enter email"
+          placeholder="Enter username"
         />
       </div>
       <div className="form-group mt-1 ">
