@@ -15,13 +15,13 @@ app.listen(3000, () => {
     console.log('Servidor funciona en el puerto 3000')
 })
 
-app.get('/users', async (req, res) => {
+app.get('/usuarios', async (req, res) => {
     const resultado = await informacionUsuario()
     res.json(resultado)
 })
 
 
-app.post('/users', async (req, res) => {
+app.post('/usuarios', async (req, res) => {
     const { user_name, password, mail, phone, created_at, modified_at } = req.body
     await agregarUsuario(user_name, password, mail, phone, created_at, modified_at)
     res.json()
@@ -38,7 +38,7 @@ app.put('/posts/like/:id', async (req, res) => {
 
 */
 
-app.delete('/users/:id', async (req, res) => {
+app.delete('/usuarios/:id', async (req, res) => {
     const { id } = req.params
     await borrarPost(id)
     res.send('Usuario eliminado en la base de datos')
