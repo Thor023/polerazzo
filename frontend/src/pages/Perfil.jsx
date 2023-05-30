@@ -9,7 +9,7 @@ export default function Home() {
 
   const getUsuarioData = async () => {
     const urlServer = "http://localhost:3000"
-    const endpoint = "/usuarios"
+    const endpoint = "/users"
     const token = localStorage.getItem("token")
 
     try {
