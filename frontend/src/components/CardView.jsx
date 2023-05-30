@@ -6,11 +6,6 @@ import { CartContext } from "../context/CartContext";
 
 const CardView = ({ poleras }) => {
   const { addToCart } = useContext(CartContext);
-  const [selectedColor, setSelectedColor] = useState("");
-
-  const handleColorChange = (event) => {
-    setSelectedColor(event.target.value);
-  };
 
   return (
     <>
@@ -26,8 +21,8 @@ const CardView = ({ poleras }) => {
               <label htmlFor={`color-select-${polera.id}`}>Colores disponibles</label>
               <select
                 id={`color-select-${polera.id}`}
-                value={selectedColor}
-                onChange={handleColorChange}
+                value={polera.selectedColor}
+                onChange={(event) => polera.setSelectedColor(event.target.value)}
                 className="color_select"
               >
                 <option value="">Selecciona un color</option>
@@ -40,12 +35,12 @@ const CardView = ({ poleras }) => {
             </div>
             <hr />
             <div className="tallas">
-              <label htmlFor={`color-select-${polera.id}`}>Tallas disponibles</label>
+              <label htmlFor={`size-select-${polera.id}`}>Tallas disponibles</label>
               <select
-                id={`color-select-${polera.id}`}
-                value={selectedColor}
-                onChange={handleColorChange}
-                className="color_select"
+                id={`size-select-${polera.id}`}
+                value={polera.selectedSize}
+                onChange={(event) => polera.setSelectedSize(event.target.value)}
+                className="size_select"
               >
                 <option value="">Selecciona una talla</option>
                 {polera.tallas.map((talla, idx) => (

@@ -14,9 +14,6 @@ const Navbar = () => {
           <div className="navbar_logo">
             <img src={Logo} alt="Polerazzo Logo" className="logo_image" />
           </div>
-          <div className="navbar_title">
-            <h3>Polerazzo</h3>
-          </div>
         </div>
       </Link>
       <div className="navbar_cart">
