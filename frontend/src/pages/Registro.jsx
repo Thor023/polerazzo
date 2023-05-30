@@ -32,12 +32,12 @@ export default function RegistroForm() {
       <div className="form-group mt-1 ">
         <label>usuario</label>
         <input
-          value={usuario.user_name}
+          value={usuario.user}
           onChange={handleSetUsuario}
           type="text"
-          name="usuario"
+          name="user"
           className="form-control"
-          placeholder="Enter username"
+          placeholder="Enter user name"
         />
       </div>
       <div className="form-group mt-1 ">

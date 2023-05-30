@@ -14,6 +14,14 @@ app.use(express.json())
 app.listen(3000, () => {
     console.log('Servidor funciona en el puerto 3000')
 })
+/*
+//Función reportar consultas
+const reportarConsultas = async (req, res, next) => {
+    const parametros = req.params
+    const url = req.url
+    console.log(`Hoy ${new Date()} recibimos una consulta en ${url} con los parametros:`, parametros)
+    next()
+}
 
 //Función de logueo
 app.post('/login', reportarConsultas, async (req, res) => {
@@ -29,6 +37,22 @@ app.post('/login', reportarConsultas, async (req, res) => {
     }
 })
 
+//Función usuarios con token
+app.get('/usuarios', reportarConsultas, async (req, res) => {
+    try {
+        const Authorization = req.header("Authorization")
+        const token = Authorization.split("Bearer ")[1]
+        jwt.verify(token, "az_AZ")
+        const { email } = jwt.decode(token)
+        const datos = await obtenerDatos(email)
+        res.json(datos)
+    }
+    catch (error) {
+        console.log(error)
+        res.status(error.code || 500).send(error)
+    }
+})
+*/
 app.get('/usuarios', async (req, res) => {
     const resultado = await informacionUsuario()
     res.json(resultado)
