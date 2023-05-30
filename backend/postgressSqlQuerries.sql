@@ -1,4 +1,4 @@
-CREATE DATABASE polerazzo;
+CREATE DATABASE polerazzo_db;
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
