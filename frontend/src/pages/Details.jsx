@@ -7,18 +7,18 @@ import { CartContext } from '../context/CartContext'
 import data from '../data/poleras.json'
 
 const Details = () => {
-  const [pizza, setPizza] = useState('')
+  const [polera, setPolera] = useState('')
   const [loading, setLoading] = useState(true)
   const {id} = useParams()
   const navigate = useNavigate()
   const {addToCart} = useContext(CartContext);
 
   useEffect(()=>{
-      detailsPizza()
+      detailsPolera()
   },[])
 
-  const detailsPizza = () =>{
-    setPizza(data.find(item => item.id === id))
+  const detailsPolera = () =>{
+    setPolera(data.find(item => item.id === id))
     setLoading(false)
   }
 
@@ -41,11 +41,11 @@ const Details = () => {
     <>
     <article className='wrapper'>
       <div className='grid__img'>
-        <img src={pizza.img} alt="" />
+        <img src={polera.img} alt="" />
       </div>
       <div className='description'>
         <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', marginRight:'1rem', cursor:'pointer'}}>
-        <h1>{pizza.name}</h1>
+        <h1>{polera.name}</h1>
         <span>
           <svg onClick={()=>navigate(-1)}
           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{width:'30px'}}><path d="M6 18L18 6M6 6l12 12" />
@@ -53,17 +53,17 @@ const Details = () => {
         </span>
         </div>
         <hr/>
-        <p>{pizza.desc}</p>
+        <p>{polera.desc}</p>
 
         <div className='ingredients' style={{padding:'0'}}>
           <span>Colores</span>
           <ul>
             {
-              pizza.ingredients.map((item, idx) => (
+              polera.ingredients.map((item, idx) => (
                 <li key={idx}>
-                  <span>
+                  {/* <span>
                       <img src={icon} alt="" />
-                  </span>
+                  </span> */}
                   {item}
                 </li>
               ))
@@ -71,8 +71,8 @@ const Details = () => {
           </ul>
         </div>
         <div className='info_card'>
-        <h1>Precio: ${pizza.price}</h1>
-        <button type='button' onClick={()=> addToCart(pizza)}>
+        <h1>Precio: ${polera.price}</h1>
+        <button type='button' onClick={()=> addToCart(polera)}>
         Añadir
           <span>&#x1F6D2;</span>
           </button>

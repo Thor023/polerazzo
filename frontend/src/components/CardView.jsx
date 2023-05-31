@@ -17,7 +17,7 @@ const CardView = ({ poleras }) => {
           <div className="card_title">
             <h1>{polera.name}</h1>
             <hr />
-            <div className="ingredients">
+            {/* <div className="ingredients">
               <label htmlFor={`color-select-${polera.id}`}>Colores disponibles</label>
               <select
                 id={`color-select-${polera.id}`}
@@ -32,8 +32,8 @@ const CardView = ({ poleras }) => {
                   </option>
                 ))}
               </select>
-            </div>
-            <hr />
+            </div> */}
+            {/* <hr />
             <div className="tallas">
               <label htmlFor={`size-select-${polera.id}`}>Tallas disponibles</label>
               <select
@@ -49,7 +49,7 @@ const CardView = ({ poleras }) => {
                   </option>
                 ))}
               </select>
-            </div>
+            </div> */}
             <h1 className="price">${polera.price}</h1>
             <div className="add_card">
               <Link style={{ textDecoration: 'none' }} to={`/polera/${polera.id}`}>
