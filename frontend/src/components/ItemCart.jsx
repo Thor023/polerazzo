@@ -6,7 +6,7 @@ const ItemCart = ({ item }) => {
 
   const handleCheckout = () => {
     // Abre el enlace en otra ventana
-    window.open("https://www.flow.cl/btn.php?token=ak3xrqe", '_blank');
+    window.open('https://www.flow.cl/btn.php?token=ak3xrqe', '_blank');
   };
 
   return (
@@ -15,8 +15,6 @@ const ItemCart = ({ item }) => {
         <div className="carrito__description">
           <img src={item.img} alt="" width={'100px'} /> {/* Ajusta el ancho de la imagen */}
           <h2>{item.name}</h2>
-          <p>Talla: {item.selectedSize}</p>
-          <p>Color: {item.selectedColor}</p>
         </div>
         <div className="carrito__info__pay">
           <h2>${item.price}</h2>
@@ -36,6 +34,9 @@ const ItemCart = ({ item }) => {
             }}
           >
             +
+          </button>
+          <button id="payment" onClick={handleCheckout}>
+            Ir a pagar
           </button>
         </div>
       </article>

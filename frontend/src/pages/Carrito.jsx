@@ -12,7 +12,7 @@ const Carrito = () => {
 
   return (
     <div className='carrito__container'>
-      <h1>Detalles del pedido:</h1>
+      <h1>Detalles de Favoritos:</h1>
       {cartItem.length === 0 ? (
         <span>Tu carro está vacío</span>
       ) : (
@@ -30,9 +30,7 @@ const Carrito = () => {
             0
           )}
         </h1>
-        <button type='button' id='payment' onClick={handlePayment}>
-          Ir a Pagar
-        </button>
+
       </div>
     </div>
   );
