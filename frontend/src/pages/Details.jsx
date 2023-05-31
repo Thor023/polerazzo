@@ -61,9 +61,7 @@ const Details = () => {
             {
               polera.ingredients.map((item, idx) => (
                 <li key={idx}>
-                  {/* <span>
-                      <img src={icon} alt="" />
-                  </span> */}
+
                   {item}
                 </li>
               ))

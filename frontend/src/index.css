@@ -249,8 +249,13 @@ grid-template-rows: 1fr 1fr;
 grid-auto-flow: row;
 align-items: top;
 margin: 2rem auto;
+<<<<<<< HEAD
 width: 50%;
 height: 40vh;
+=======
+width: 55%;
+height: 60vh;
+>>>>>>> 599b44e6eac3d75ad14e34f5c40f6f59b5600bff
 gap: 1rem;
 border: 1px solid rgb(220, 220, 220);
 background-color: black;
