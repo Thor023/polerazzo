@@ -1,93 +1,83 @@
 [
 
   {
-    "desc": "Polera prueba 1",
+    "desc": "Una polera diseñada para mujeres. Puede tener diferentes cortes y estilos, desde mangas cortas hasta mangas largas. Es una prenda versátil y llamativa que puede adaptarse a diversas ocasiones.",
     "id": "P001",
     "img": "https://images.unsplash.com/photo-1456885284447-7dd4bb8720bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW4lMjB0c2hpcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
     "tallas": ["XS", "S", "M", "L", "XL", "XXL"],
-    "name": "Prueba1",
-    "price": 9000,
-    "amount": 1
-  },
-  {
-    "desc": "Polera prueba 2",
-    "id": "P002",
-    "img": "https://images.unsplash.com/photo-1593726856932-b5b9a661ed46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3JmdWwlMjB0c2hpcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
-    "tallas": ["XS", "S", "M", "L", "XL", "XXL"],
-    "name": "Prueba2",
-    "price": 8500,
-    "amount": 1
-  },
-  {
-    "desc": "Polera prueba 3",
-    "id": "P003",
-    "img": "https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHRzaGlydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60",
-    "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
-    "tallas": ["XS", "S", "M", "L", "XL", "XXL"],
-    "name": "Prueba3",
+    "name": "Polera corta mujer",
     "price": 12000,
     "amount": 1
   },
   {
-    "desc": "Polera prueba 4",
+    "desc": "Una polera de color oscuro con un diseño inspirado en el anime. Puede presentar ilustraciones de personajes populares de series de anime, logotipos de animes famosos o citas icónicas del mundo del anime. Es ideal para los amantes de la animación japonesa.",
+    "id": "P002",
+    "img": "https://images.unsplash.com/photo-1593726856932-b5b9a661ed46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3JmdWwlMjB0c2hpcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
+    "tallas": ["XS", "S", "M", "L", "XL", "XXL"],
+    "name": "Polera oscura Anime",
+    "price": 12000,
+    "amount": 1
+  },
+  {
+    "desc": "Una polera de color negro con un diseño de esqueleto impreso. Puede tener un estilo minimalista con un esqueleto blanco en el centro de la prenda o un diseño más detallado que cubra toda la superficie. Es una opción popular para aquellos que buscan un estilo oscuro o gótico.",
+    "id": "P003",
+    "img": "https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHRzaGlydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60",
+    "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
+    "tallas": ["XS", "S", "M", "L", "XL", "XXL"],
+    "name": "Polera negra con esqueleto",
+    "price": 12000,
+    "amount": 1
+  },
+  {
+    "desc": "Una polera negra diseñada para mujeres con un estampado de un dragón. Puede tener un diseño realista o estilizado, con un dragón en el frente o envolviendo la prenda. Es una opción elegante y con un toque de fantasía para las amantes de los dragones y la mitología.",
     "id": "P004",
     "img": "https://images.unsplash.com/photo-1519722417352-7d6959729417?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29taWMlMjB0c2hpcnR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
     "tallas": ["XS", "S", "M", "L", "XL", "XXL"],
-    "name": "Prueba4",
-    "price": 7000,
+    "name": "Polera negra mujer con dragón",
+    "price": 12000,
     "amount": 1
   },
   {
-    "desc": "Polera prueba 5",
+    "desc": "Una polera de color blanco con frases impresas. Puede presentar citas motivadoras, divertidas o inspiradoras en el frente o en la espalda de la prenda. Es una opción popular para aquellos que desean transmitir un mensaje o expresar su personalidad a través de su vestimenta.",
     "id": "P005",
     "img": "https://th.bing.com/th/id/R.5ff3cec9f6e7ff6b6bba844fd2e4a64c?rik=086Cz%2f0%2boeyb6w&pid=ImgRaw&r=0",
     "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
     "tallas": ["XS", "S", "M", "L", "XL", "XXL"],
-    "name": "Prueba5",
-    "price": 7000,
+    "name": "Polera blanca frases",
+    "price": 12000,
     "amount": 1
   },
   {
-    "desc": "Polera prueba 6",
+    "desc": "Una polera inspirada en la serie de animación Robotech. Puede tener impresiones de los personajes principales, mechas o el logotipo de la serie. Es una opción ideal para los fanáticos de Robotech y los entusiastas de los robots gigantes.",
     "id": "P006",
     "img": "https://www.magicpony.cl/images/sites_products-62bf9143c5f69.jpg",
     "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
     "tallas": ["XS", "S", "M", "L", "XL", "XXL"],
-    "name": "Prueba6",
-    "price": 7000,
+    "name": "Polera Robotech",
+    "price": 12000,
     "amount": 1
   },
   {
-    "desc": "Polera prueba 7",
+    "desc": "Una polera de color azul basada en el personaje de videojuegos Mega Man. Puede tener una ilustración del icónico personaje en el frente, con su característico casco y blaster. Es una opción perfecta para los fanáticos de Mega Man y los videojuegos clásicos.",
     "id": "P007",
     "img": "https://80steess3.imgix.net/Main-Headless/characters-mega-man-shirt.main.jpeg?w=500&h=750&fit=crop&usm=12&sat=15&auto=format&q=60&nr=15",
     "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
     "tallas": ["XS", "S", "M", "L", "XL", "XXL"],
-    "name": "Prueba7",
-    "price": 7000,
+    "name": "Polera Mega Man Azul",
+    "price": 12000,
     "amount": 1
   },
   {
-    "desc": "Polera prueba 8",
+    "desc": "Una polera de color oscuro con motivos relacionados con la franquicia Pokémon. Puede tener impresiones de los personajes principales de Pokémon, como Pikachu o Charizard, así como el logotipo de Pokémon. Es una opción ideal para los seguidores de Pokémon y los amantes de los juegos de rol.",
     "id": "P008",
     "img": "https://th.bing.com/th/id/OIP.OwOw81CwtwLnbuus-pY0wQHaLI?pid=ImgDet&rs=1",
     "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
     "tallas": ["XS", "S", "M", "L", "XL", "XXL"],
-    "name": "Prueba8",
-    "price": 7000,
-    "amount": 1
-  },
-  {
-    "desc": "Polera prueba 9",
-    "id": "P009",
-    "img": "https://th.bing.com/th/id/OIP.OwOw81CwtwLnbuus-pY0wQHaLI?pid=ImgDet&rs=1",
-    "ingredients": ["Rojo", "Negro", "Blanco", "Verde"],
-    "tallas": ["XS", "S", "M", "L", "XL", "XXL"],
-    "name": "Prueba9",
-    "price": 9000,
+    "name": "Polera oscura Pokémon",
+    "price": 12000,
     "amount": 1
   }
 ]
