@@ -6,6 +6,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
 import data from '../data/poleras.json'
 
+
 const Details = () => {
   const [polera, setPolera] = useState('')
   const [loading, setLoading] = useState(true)
@@ -75,6 +76,7 @@ const Details = () => {
           <span>&#x1F6D2;</span>
           </button>
         </div>
+
       </div>
     </article>
     </>
